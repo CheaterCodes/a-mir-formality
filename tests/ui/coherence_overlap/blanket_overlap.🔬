@@ -1,0 +1,11 @@
+[
+    crate core {
+        trait Foo { }
+
+        trait Bar { }
+
+        impl<ty T> Foo for T { }
+        
+        impl<ty T> Foo for T where T: Bar { }
+    }
+]
